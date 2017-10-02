@@ -1,0 +1,10 @@
+﻿@model Application.OedSearchResultsModel
+
+@{
+    ViewBag.Title = "title";
+    Layout = "_Layout";
+}
+
+<h2>Search</h2>
+<p class="text-danger">@ViewData["ErrorMessage"]</p>
+<p>Searched for @Html.DisplayFor(model => model.Query)</p>

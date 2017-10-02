@@ -1,0 +1,11 @@
+﻿@{
+    ViewData["Title"] = "words.dot.kitchen";
+}
+<p class="text-danger">@ViewData["ErrorMessage"]</p>
+<form asp-controller="Words" asp-action="Search" method="get" class="form">
+    <div class="form-group row justify-content-center">
+        <label for="query" class="sr-only">Query</label>
+        <input class="form-control col-sm-8" type="text" placeholder="artisan" name="query" id="query">
+        <button type="submit" class="btn btn-primary col-sm-2">Search</button>
+    </div>
+</form>
